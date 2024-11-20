@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  color: #fff;
+  background: #000;
+}
+.content {
+  position: relative;
+}
+.col-md-8 {
+  width: 66.66%;
+  align-items: center;
+  padding-top: 80px;
+}
+.content h1 {
+  color: white;
+  font-size: 11vmin;
+}
+.content::before {
+  content: "";
+  background-image: url("https://nexteuv.wpengine.com/wp-content/uploads/2023/02/slider-1.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  z-index: -2;
+  height: 100vh;
+  object-fit: cover;
+}
+.text-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  background: linear-gradient(90deg, #000, rgba(245, 245, 245, 0.4), #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  z-index: -1;
+  animation: shine 6s ease-in-out infinite;
+}
+.text-animation h1 {
+  font-size: 150px;
+  margin-bottom: 20px;
+}
+@keyframes shine {
+  from {
+    background-position-x: -500%;
+  }
+  to {
+    background-position-x: 500%;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="text-animation">
+          <h1>EUV</h1>
+        </div>
+        <div class="col-md-8">
+          <h1>The top choices in <span style="color: red;">wild performance.</span> </h1>
+        </div>
+      </div>
+</body>
+</html>
