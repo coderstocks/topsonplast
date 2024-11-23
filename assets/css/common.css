@@ -11,7 +11,7 @@
   margin: 0;
   box-sizing: border-box;
   transition: 0.2s all ease-in-out;
-}
+} 
 body {
   font-family: "Lexend Deca", sans-serif;
   background-color: #000;
@@ -307,7 +307,7 @@ button {
   animation: shine 6s ease-in-out infinite;
 }
 .content .text-animation span {
-  font-size: 28vmin;
+  font-size: 24vmin;
 }
 @keyframes shine {
   from {
@@ -466,4 +466,31 @@ button {
     .section-arrow .image-container{
         height: 100%;
     }
+}
+/* Slick */
+.slick-prev{
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+}
+.slick-next, .slick-prev{
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 0;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  opacity: .5;
+}
+.slick-next:hover, .slick-prev:hover{
+  opacity: 1;
+}
+.slick-next{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0%;
 }

@@ -113,3 +113,30 @@
         left: 10%;
     }
 }
+/* testimonial */
+.testimonial{
+    position: relative;
+}
+.testimonial img{
+    height: 70vh;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+}
+.testimonial .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .7);
+}
+.testimonial .card-img-overlay{
+    z-index: 2;
+}
+@media only screen and (max-width: 692px) {
+    .testimonial img{
+        height: 100vh!important;
+        object-fit: cover;
+    }
+}
