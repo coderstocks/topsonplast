@@ -470,9 +470,9 @@ button {
 /* Slick */
 .slick-prev{
   position: absolute;
-  top: 50%;
-  left: 0%;
-  transform: translateY(-50%);
+  top: 0%;
+  left: 80%;
+  transform: translateY(-150%);
 }
 .slick-next, .slick-prev{
   z-index: 1;
@@ -483,14 +483,13 @@ button {
   font-size: 20px;
   background-color: black;
   color: white;
-  opacity: .5;
 }
 .slick-next:hover, .slick-prev:hover{
   opacity: 1;
 }
 .slick-next{
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0%;
+  transform: translateY(-150%);
   right: 0%;
 }
