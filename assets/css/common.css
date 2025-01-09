@@ -357,7 +357,7 @@ button {
     left: -12px;
   }
   .text-animation span {
-    font-size: 15vmin;
+    font-size: 13vmin;
   }
 }
 @keyframes shine {
@@ -494,4 +494,12 @@ button {
   top: 0%;
   transform: translateY(-150%);
   right: 0%;
+}
+
+/*  product-detail */
+.product-detail .card:hover .card-img-overlay1{
+  opacity: 1;
+}
+.product-detail .card .card-img-overlay1{
+  opacity: 0;
 }
