@@ -19,7 +19,9 @@
 }
 .img-item:nth-child(1),
 .img-item:nth-child(2),
-.img-item:nth-child(3){
+.img-item:nth-child(3),
+.img-item:nth-child(4),
+.img-item:nth-child(5){
     margin-right: 0;
 }
 .img-item:hover{
@@ -87,6 +89,7 @@
     color: #ffffff;
     padding-bottom: 0.6rem;
 }
+
 .product-detail p{
     font-size: 0.9rem;
     padding: 0.3rem;
@@ -163,13 +166,13 @@
 }
 
 @media screen and (min-width: 992px){
-    .card{
+    .pro-card{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 1.5rem;
     }
     .card-wrappers{
-        height: 100vh;
+        height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
